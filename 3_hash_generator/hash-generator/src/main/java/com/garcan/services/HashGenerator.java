@@ -14,7 +14,7 @@ public class HashGenerator {
     public static String generateSHA256Hash(String input) throws Exception {
         if (!isValidInput(input)) {
             throw new Exception(
-                    "ERROR: Invalid input. The string must consist of at least 8 characters, at least one number, and at least one special character.");
+                    "Invalid input. The string must consist of at least 8 characters, at least one number, and at least one special character");
         }
 
         MessageDigest digest = MessageDigest.getInstance("SHA-256");
