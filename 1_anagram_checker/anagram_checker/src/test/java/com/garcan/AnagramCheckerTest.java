@@ -78,4 +78,11 @@ public class AnagramCheckerTest {
         assertFalse(AnagramChecker.areAnagrams("Payment received", "every cent pays me"));
         assertFalse(AnagramChecker.areAnagrams("Elvis Presley", "Does Presley live?"));
     }
+
+   @Test
+    void testITJ() {
+        String input1 = "Tom Marvolo Riddle", input2 = "I am Lord Voldemort";
+        boolean result = AnagramChecker.areAnagrams(input1, input2);
+        System.out.println("Are \"" + input1 + "\" and \"" + input2 + "\" anagrams?: " + result);
+    }
 }

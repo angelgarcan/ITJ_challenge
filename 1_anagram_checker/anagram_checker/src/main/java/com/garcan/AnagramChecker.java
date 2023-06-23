@@ -13,6 +13,7 @@ public class AnagramChecker {
         Arrays.sort(sanitizedArr1);
         Arrays.sort(sanitizedArr2);
 
+        // #FIXME: ONLY4DEBUG
         // System.out.println(str1 + " -> " + Arrays.toString(sanitizedArr1));
         // System.out.println(str2 + " -> " + Arrays.toString(sanitizedArr2));
 

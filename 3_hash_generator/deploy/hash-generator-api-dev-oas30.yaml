@@ -1,0 +1,24 @@
+openapi: "3.0.1"
+info:
+  title: "hash-generator-api"
+  version: "2023-06-23T18:12:03Z"
+servers:
+- url: "https://$API_GATEWAY_ID.execute-api.us-east-2.amazonaws.com/{basePath}"
+  variables:
+    basePath:
+      default: "dev"
+paths:
+  /hash-generator:
+    post:
+      responses:
+        "200":
+          description: "200 response"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Empty"
+components:
+  schemas:
+    Empty:
+      title: "Empty Schema"
+      type: "object"

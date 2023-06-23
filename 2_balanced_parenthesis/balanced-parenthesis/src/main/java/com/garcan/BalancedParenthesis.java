@@ -5,6 +5,9 @@ import java.util.function.Predicate;
 import java.util.stream.Stream;
 
 public class BalancedParenthesis {
+
+    private BalancedParenthesis(){}
+
     private enum CharPair {
         PARENTHESES('(', ')'),
         BRACKETS('[', ']'),
