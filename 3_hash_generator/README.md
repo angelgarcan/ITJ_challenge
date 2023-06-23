@@ -1,0 +1,1 @@
+curl -X POST -H "Content-Type: application/json" -d '{"input": "Password123#"}' https://prpv4mrpt8.execute-api.us-east-2.amazonaws.com/dev/password_validator
