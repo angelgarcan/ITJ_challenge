@@ -14,6 +14,15 @@ public class BalancedParenthesisTest {
     }
 
     @Test
+    void testUnbalancedParenthesis() {
+        assertFalse(BalancedParenthesis.isBalanced("(((())})"));
+        assertFalse(BalancedParenthesis.isBalanced(")((()))()()"));
+        assertFalse(BalancedParenthesis.isBalanced("((()()()))(()"));
+        assertFalse(BalancedParenthesis.isBalanced("()()("));
+        assertFalse(BalancedParenthesis.isBalanced("}}{"));
+    }
+
+    @Test
     void testEmptyString() {
         assertTrue(BalancedParenthesis.isBalanced(""));
     }
@@ -23,15 +32,6 @@ public class BalancedParenthesisTest {
         assertFalse(BalancedParenthesis.isBalanced("("));
         assertFalse(BalancedParenthesis.isBalanced("{{"));
         assertFalse(BalancedParenthesis.isBalanced("]"));
-    }
-
-    @Test
-    void testUnbalancedParenthesis() {
-        assertFalse(BalancedParenthesis.isBalanced("(((())})"));
-        assertFalse(BalancedParenthesis.isBalanced(")((()))()()"));
-        assertFalse(BalancedParenthesis.isBalanced("((()()()))(()"));
-        assertFalse(BalancedParenthesis.isBalanced("()()("));
-        assertFalse(BalancedParenthesis.isBalanced("}}{"));
     }
 
     @Test
